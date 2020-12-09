@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <title>Belajar VueJs</title>
+        <link rel="stylesheet" href="assets/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <img src="assets/img/image.jpg">
+        <h2>Belajar Vue Js</h2>
+        <div id="app">
+            <h1>Firstname :{{ firstname }}</h1>
+            <h1>Lastname :{{ lastname}}</h1>
+            <h1>Myaddress :{{ address }}</h1>
+        </div>
+    </body>
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+                firstname: "Ricky",
+                lastname: "Noviansyah",
+                address: "Tangerang city"
+               
+            }
+        })
+    </script>
+</html>
